@@ -1,0 +1,29 @@
+---
+title: "My second post"
+description: |
+  A short description of the post.
+author:
+  - name: Mark Johnson
+    url: https://example.com/norajones
+date: 2023-01-12
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+
+> A test of ggplot
+
+```{r}
+
+ggplot(mtcars, aes(x=mpg, y=hp))+ geom_point()+geom_smooth(method="lm", se=FALSE)
+
+```
+
+

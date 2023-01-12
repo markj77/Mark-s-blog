@@ -2,10 +2,10 @@
   {
     "path": "posts/welcome/",
     "title": "Welcome to My Blog",
-    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
+    "description": "\"I'm using this page to improve my data analytics and R skills while building a blog!\"",
     "author": [
       {
-        "name": "Nora Jones",
+        "name": "Mark Johnson",
         "url": "https://example.com/norajones"
       }
     ],
@@ -13,7 +13,24 @@
     "categories": [],
     "contents": "\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2023-01-12T15:13:09-08:00",
-    "input_file": {}
+    "last_modified": "2023-01-12T15:36:22-08:00",
+    "input_file": "welcome.knit.md"
+  },
+  {
+    "path": "posts/2023-01-12-my-second-post/",
+    "title": "My second post",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Mark Johnson",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2023-01-12",
+    "categories": [],
+    "contents": "\r\n\r\nA test of ggplot\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2023-01-12-my-second-post/my-second-post_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2023-01-12T15:36:49-08:00",
+    "input_file": "my-second-post.knit.md"
   }
 ]
