@@ -1,7 +1,7 @@
 ---
 title: "Welcome to My Blog"
 description: |
-  I'm using this page to improve my data analytics and R skills while building a blog!
+  "I'm using this page to improve my data analytics and R skills while building a blog!"
 author:
   - name: Mark Johnson 
     url: https://example.com/norajones
