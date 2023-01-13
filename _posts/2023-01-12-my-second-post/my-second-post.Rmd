@@ -15,14 +15,45 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
+library(gt)
 ```
 
 
-> A test of ggplot
+> 2022/2023 English Premier League Season 
+
+So far the English Premier League season is approximately half way through. Lets create a table for each premier league team displaying the highest number of shots, the game week that occurred and their opponent.
+
+I'll be using free Premier League data found here - https://www.football-data.co.uk/englandm.php
 
 ```{r}
 
-ggplot(mtcars, aes(x=mpg, y=hp))+ geom_point()+geom_smooth(method="lm", se=FALSE)
+epl <- read.csv("C:/Users/15593/Documents/GitHub/Mark-s-blog/E0.csv") %>% 
+  mutate(key = paste(AwayTeam, HomeTeam, Date))
+
+epl_away <- epl %>% 
+  select(AwayTeam, AS, Date, key, HomeTeam) %>% 
+  rename(Team=AwayTeam, Shots=AS) %>% 
+  mutate(status="away") %>% 
+  rename(Oponent=HomeTeam)
+
+epl_home <- epl %>% 
+  select(HomeTeam, HS, Date, key, AwayTeam) %>% 
+  rename(Team=HomeTeam, Shots=HS) %>% 
+  mutate(status="home") %>% 
+  rename(Oponent=AwayTeam)
+
+epl_both <- bind_rows(epl_home, epl_away)
+
+epl_max_shots <- epl_both %>% 
+  group_by(Team) %>% 
+  top_n(1, Shots) 
+
+
+
+epl_table <- gt(epl_max_shots)
+
+epl_table
+  
 
 ```
 
