@@ -1,7 +1,7 @@
 ---
-title: "About this blog"
+title: "A bit more..."
 description: |
-  Some additional details about the blog
+  I'm using this space to try to get better at data analytics while having some fun building a blog.
 ---
 
 ```{r setup, include=FALSE}
