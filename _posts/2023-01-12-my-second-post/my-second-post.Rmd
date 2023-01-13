@@ -46,7 +46,8 @@ epl_both <- bind_rows(epl_home, epl_away)
 
 epl_max_shots <- epl_both %>% 
   group_by(Team) %>% 
-  top_n(1, Shots) 
+  top_n(1, Shots) %>% 
+  arrange(Team)
 
 
 
