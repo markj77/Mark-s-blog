@@ -72,6 +72,7 @@ worst_shots <- epl_max_shots %>%
 
 gt(worst_shots)
 
+ggplot(epl, aes(x=HS, y=AS))+geom_point()+geom_line()
 ```
 
 
