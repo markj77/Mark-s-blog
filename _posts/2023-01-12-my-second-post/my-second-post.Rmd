@@ -1,10 +1,10 @@
 ---
-title: "My second post"
+title: "Premier League Stats"
 description: |
-  A short description of the post.
+  A look at the 22/23 Premier League season so far.
 author:
   - name: Mark Johnson
-    url: https://example.com/norajones
+    url: 
 date: 2023-01-12
 output:
   distill::distill_article:
